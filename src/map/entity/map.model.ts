@@ -1,4 +1,4 @@
-import {  Polygon } from "geojson";
+import { Geometry, Polygon,GeoJSON } from "geojson";
 
 export class MapModel{
     id?: number;
@@ -6,6 +6,8 @@ export class MapModel{
     name?:string;
     
     desc?:string;
+    
+    properties?:string;
 
-    geom?: Polygon;
+    geom?: Geometry;
 }
