@@ -1,4 +1,4 @@
-import { Polygon } from "geojson";
+import { Geometry,Polygon,GeoJSON } from "geojson";
 
 export interface Map{
     id: number;
@@ -7,5 +7,7 @@ export interface Map{
 
     desc:string;
 
-    geom: Polygon;
+    properties:string;
+
+    geom: Geometry;
 }
