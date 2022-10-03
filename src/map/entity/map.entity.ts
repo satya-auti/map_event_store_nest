@@ -28,6 +28,6 @@ export class MapEntity {
         nullable: true,
     })
     // @IsNotEmpty()
-    geom: Geometry;
+    geom: GeoJSON;
 
 }

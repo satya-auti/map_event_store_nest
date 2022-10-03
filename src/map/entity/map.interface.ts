@@ -9,5 +9,5 @@ export interface Map{
 
     properties:string;
 
-    geom: Geometry;
+    geom: GeoJSON;
 }

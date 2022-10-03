@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Polygon } from 'geojson';
 import { from, Observable } from 'rxjs';
-import {  Repository } from 'typeorm';
+import {  DeleteResult, Repository } from 'typeorm';
 import { MapEntity } from './entity/map.entity';
 import { Map } from './entity/map.interface';
 import { MapModel } from './entity/map.model';
@@ -24,5 +24,9 @@ constructor(
     
          return from(this.mapRepository.save(mapModel));
     }
+
+    deleteMapData(id: number): Observable<DeleteResult> {
+        return from(this.mapRepository.delete(id));
+      }
    
 }
