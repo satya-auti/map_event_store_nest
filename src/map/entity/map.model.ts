@@ -9,5 +9,5 @@ export class MapModel{
     
     properties?:string;
 
-    geom?: Geometry;
+    geom?: GeoJSON;
 }
