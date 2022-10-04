@@ -27,6 +27,6 @@ constructor(
 
     deleteMapData(id: number): Observable<DeleteResult> {
         return from(this.mapRepository.delete(id));
-      }
+    }
    
 }
